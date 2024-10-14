@@ -7,7 +7,7 @@ from sklearn.model_selection import train_test_split
 #Doing this all as one function first, then building this into a class
 def log_regressor(X_train, y_train, X_test, y_test):
     #initializing the weights and bias term
-    weights = np.zeros(np.shape(X_train[1]))
+    weights = np.zeros(np.shape(X_train[0]))
     bias_term = 0.0
     #Training our model
     weights, bias_term = stochastic_gradient_descent(X_train, y_train, weights=weights, bias_term=bias_term, learning_rate=0.1)
